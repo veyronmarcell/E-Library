@@ -79,6 +79,14 @@ mvn javafx:run
 4. Push to the branch
 5. Create a Pull Request
 
+Use case diagram
+![image](https://github.com/user-attachments/assets/2559577d-28c8-4cf1-84ce-bf340a9f3ab1)
+
+class diagram
+![image](https://github.com/user-attachments/assets/42ff8fa3-abb1-47e1-96dc-e2dd8b4cb132)
+
+
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details. 
