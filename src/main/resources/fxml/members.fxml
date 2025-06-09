@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.library.controller.MembersController">
+    <top>
+        <VBox>
+            <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-background-color: #f0f0f0;">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button text="Back" onAction="#handleBack" style="-fx-background-color: #666; -fx-text-fill: white;"/>
+                <Label text="Manage Members" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+            </HBox>
+        </VBox>
+    </top>
+    
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <TextField fx:id="searchField" promptText="Search members..." HBox.hgrow="ALWAYS"/>
+                <Button text="Search" onAction="#handleSearch" style="-fx-background-color: #2196F3; -fx-text-fill: white;"/>
+                <Button text="Add Member" onAction="#handleAddMember" style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+            </HBox>
+            
+            <TableView fx:id="membersTable" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+                    <TableColumn fx:id="firstNameColumn" text="First Name" prefWidth="150"/>
+                    <TableColumn fx:id="lastNameColumn" text="Last Name" prefWidth="150"/>
+                    <TableColumn fx:id="emailColumn" text="Email" prefWidth="200"/>
+                    <TableColumn fx:id="phoneColumn" text="Phone" prefWidth="120"/>
+                    <TableColumn fx:id="registrationDateColumn" text="Registration Date" prefWidth="120"/>
+                    <TableColumn fx:id="actionsColumn" text="Actions" prefWidth="100"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+    
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" style="-fx-background-color: #f0f0f0;">
+            <padding>
+                <Insets top="10" right="20" bottom="10" left="20"/>
+            </padding>
+            <Label fx:id="statusLabel" text="Ready"/>
+        </HBox>
+    </bottom>
+</BorderPane> 

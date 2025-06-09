@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.library.controller.MemberDialogController"
+          hgap="10" vgap="10" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    
+    <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="firstNameField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    
+    <Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    
+    <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    
+    <Label text="Phone:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="phoneField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    
+    <Label text="Address:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <TextArea fx:id="addressField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    
+    <HBox spacing="10" alignment="CENTER_RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <Button text="Cancel" onAction="#handleCancel" style="-fx-background-color: #666; -fx-text-fill: white;"/>
+        <Button text="Save" onAction="#handleSave" style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+    </HBox>
+</GridPane> 
